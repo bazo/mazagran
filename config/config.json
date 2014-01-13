@@ -1,0 +1,40 @@
+{
+	"parameters": {
+		"server": {
+			"host": "0.0.0.0",
+			"port": 8080
+		},
+		"templates": {
+			"path" : "./templates/",
+			"defaultExtension" : "html"
+		},
+		"controllers": {
+			"path": "./controllers"
+		},
+		"statics": {
+			"path": "./www",
+			"maxAge": 86400000
+		},
+		"logs": {
+			"dir": "./logs"
+		}
+	},
+	"services": {
+		"passport": {
+			"service": "node_modules/mazagran/node_modules/passport",
+			"instantiate": false
+		},
+		"view": {
+			"service": "node_modules/mazagran/libs/nunjucks_view",
+			"arguments": ["%templates.path%", "%templates.defaultExtension%"]
+		},
+		"nunjucks": {
+			"service": "node_modules/mazagran/node_modules/nunjucks",
+			"instantiate": false
+		},
+		"logger": {
+			"service": "node_modules/mazagran/libs/logger",
+			"arguments": ["%logs.dir%"]
+		}
+	}
+}

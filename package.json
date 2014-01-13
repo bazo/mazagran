@@ -1,0 +1,39 @@
+{
+	"name": "mazagran",
+	"version": "0.0.1",
+	"description": "Opinionated node.js framework",
+	"main": "index.js",
+	"dependencies": {
+		"async": "~0.2.9",
+		"barista": "~0.2.0",
+		"body-parser": "~1.0.0",
+		"connect": "~2.12.0",
+		"connect-flash": "~0.1.1",
+		"connect-powered-by": "~0.1.0",
+		"deepmerge": "~0.2.7",
+		"http-status-codes": "~1.0.2",
+		"moment": "~2.5.0",
+		"nunjucks": "~1.0.1",
+		"passport": "~0.1.18",
+		"quip": "~0.1.2",
+		"winston": "~0.7.2",
+		"dependency-injection": "~2.3.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bazo/mazagran"
+	},
+	"keywords": [
+		"framework"
+	],
+	"author": "Martin Bažík <martin@bazo.sk>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bazo/mazagran/issues"
+	},
+	"homepage": "https://github.com/bazo/mazagran"
+}
