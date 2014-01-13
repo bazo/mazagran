@@ -35,6 +35,10 @@
 		"logger": {
 			"service": "node_modules/mazagran/libs/logger",
 			"arguments": ["%logs.dir%"]
+		},
+		"async": {
+			"service": "node_modules/mazagran/node_modules/async",
+			"instantiate": false
 		}
 	}
 }

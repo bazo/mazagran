@@ -17,7 +17,6 @@ var Logger = require('./logger');
 var HttpStatus = require('http-status-codes');
 var async = require('async');
 
-
 //di
 var Helpers = require('dependency-injection/lib/Helpers');
 
@@ -118,7 +117,7 @@ var App = function(di, router) {
 			}
 		], function(err) {
 			logger.error('%d: %s', err.code, err.message, err.stack);
-			
+
 			//todo: create error controller
 			switch (err.code) {
 				case HttpStatus.NOT_FOUND:
